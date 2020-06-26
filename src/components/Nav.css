@@ -1,0 +1,38 @@
+.pages{
+    display: grid;
+    grid-template-areas: 
+    "contactpage"
+    "privacy";
+    font-family: 'Righteous';
+    align-self: center;
+}
+
+.pages a {
+    background-color: #FF9D5C;
+    display: block;
+    padding: 0.8em 5em;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.pages a:hover{
+    background-color: rgb(65, 26, 0);
+    opacity: 90%;
+}
+
+.privacy{
+    grid-area: privacy;
+}
+@media(max-width: 700px){
+    .pages{
+        grid-template-areas:
+        "contactpage contactpage";
+    }
+}
+
+@media(max-width: 500px){
+    .pages{
+        grid-template-areas: 
+        "contactpage";
+    }
+}

@@ -1,0 +1,93 @@
+  .contact-container{
+      font-family: 'Righteous';
+      display: grid;
+      grid-template-areas: 
+      "cii"
+      "cf";
+      background-color: #FF9D5C;
+  }
+
+  .contact-ii{
+      display: grid;
+      grid-template-areas: 
+      "contact-pic contact-section";
+      grid-area: cii;
+      color: white;
+
+  }
+
+  .contact-pic{
+    display: grid;
+    grid-area: contact-pic;
+    margin-left: 10em;
+  }
+
+  .contact-section{
+    /* display: grid; */
+    margin-top: 9em;
+    font-size: 20px;
+    grid-area: contact-section;
+    margin-right: 4em;
+} 
+
+  .contact-form{
+      font-family: 'Righteous';
+      margin-bottom: 2em;
+      grid-area: cf;
+      text-align: center;
+      color: white;
+  }
+
+  .contact-form > Form{
+      margin-left: 25%;
+  }
+
+  /* #cu{
+    display: grid;
+    grid-area: cu;
+  }
+
+  .location{
+    display: grid;
+    grid-area: location;
+  }
+
+  .mail{
+    display: grid;
+    grid-area: mail;
+  } */
+
+
+/* @media (max-width: 800px){
+
+  .contact-ii{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Righteous';
+    color: white;
+  }
+
+  .contact-section{
+    margin-top: 0em;
+    justify-items:center;
+    padding-left: 7em;
+    grid-template-areas:
+    "cu"
+    "location"
+    "mail" ;
+  }
+
+  .contact-form > Form{
+    padding-right: 1em;
+  }
+
+} */
+
+@media (max-width: 600px){
+}
+
+@media (max-width: 500px){
+}
+
+@media (max-width:450px){
+}

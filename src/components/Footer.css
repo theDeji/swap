@@ -1,0 +1,9 @@
+.footer{
+    font-family: 'Righteous';
+    background-color:rgb(65, 26, 0);
+    /* opacity: 80%; */
+    color: white;
+    text-align: center;
+    height: 9vh;
+    padding-top: 5px;
+}

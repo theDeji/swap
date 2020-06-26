@@ -1,0 +1,408 @@
+.home-container{
+    font-family: 'Righteous';
+    background-color:#FF9D5C ;
+    height: 120vh;
+}
+
+.swap-logo{
+    display: grid;
+    grid-area: swaplogo;
+    font-size: 80px;
+    padding-left: 4rem;
+    padding-bottom: 2rem;
+}
+
+.welcome-swap{
+    display: grid;
+    grid-template-columns:50% 40% 10%;
+}
+
+.welcome-text{
+    justify-content: left;
+    margin-bottom: 5em;
+    /* position: absolute; */
+}
+
+.welcome-text h2{
+    display: grid;
+    justify-items: center;
+    margin-top: 2em;
+    grid-area: welcome-text-h2;
+}
+
+.welcome-text h5{
+    display: grid;
+    text-align: center;
+    grid-area: welcome-text-h5;
+}
+
+
+.swap-image{
+    display: grid;
+    justify-content: right;
+
+}
+
+
+.link{
+    margin-top: 1em;
+    display: grid;
+    grid-gap: 16em;
+    margin-left: 1.5em;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-areas: 
+    "ios android";
+    justify-content: left;
+}
+
+
+/* .download-links{
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+} */
+
+
+.ios{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    position: absolute;
+    background: black;
+    opacity: 80%;
+    width: 35vh;
+    height: 10vh;
+    border-radius: 40px;
+    grid-area: ios-link;
+}
+
+.ios > p{
+    padding-top: .5em;
+    padding-right: 1em;
+}
+
+.apple{
+    padding-left: 2em;
+    padding-bottom: 1.4em;
+    width: 80px;
+    height: 80px;
+}
+
+.android{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    position: absolute;
+    background: black;
+    opacity: 80%;
+    width: 35vh;
+    height: 10vh;
+    border-radius: 40px;
+    grid-area: android-link;
+}
+
+.android >p{
+    padding-top: .5em;
+    padding-right: .8em;
+}
+
+.google{
+    padding-left: 2em;
+    padding-bottom: .9em;
+    width: 80px;
+    height: 80px;
+}
+
+
+.ios-link {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .ios-link:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+  .ios-link:hover, .ios-link:focus, .ios-link:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+  .ios-link:hover:before, .ios-link:focus:before, .ios-link:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+
+
+  .android-link {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .android-link:before {
+    pointer-events: none;
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 100%;
+    left: 5%;
+    height: 10px;
+    width: 90%;
+    opacity: 0;
+    background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+    /* W3C */
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, opacity;
+    transition-property: transform, opacity;
+  }
+  .android-link:hover, .android-link:focus, .android-link:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    /* move the element up by 5px */
+  }
+  .android-link:hover:before, .android-link:focus:before, .android-link:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+    /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+  }
+
+
+  @media (max-width: 800px){
+    .swap-logo{
+        text-align: center;
+        padding-right: .8em;
+    }
+
+    .welcome-swap {
+        margin-top: -3em;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    
+
+    .swap-image{
+      margin-top: 5em;
+      justify-self: center;
+  }
+
+    .welcome-text h2{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 25px;      
+  }
+
+  .welcome-text h5{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 15px; 
+  }
+
+  .link{
+      padding-left: 5em;
+      grid-template-areas: 
+      "ios android";
+  }
+
+}
+
+
+  @media (max-width: 600px){
+      .swap-logo{
+          text-align: center;
+          padding-right: 1em;
+      }
+
+      .welcome-swap {
+          justify-content: center;
+          grid-template-columns: 1fr;
+      }
+      
+
+      .swap-image{
+        margin-top: 5em;
+        justify-self: center;
+    }
+
+      .welcome-text h2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;      
+    }
+
+    .welcome-text h5{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 15px; 
+    }
+
+    .link{
+        padding-left: 1em;
+        grid-template-areas: 
+        "ios android";
+    }
+
+
+  }
+
+
+  @media (max-width: 500px){
+    .swap-logo{
+        text-align: center;
+        padding-right: 1em;
+        font-size: 50px;
+    }
+
+    .welcome-swap {
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+    
+
+    /* .image{
+      margin-top: 5em;
+      justify-self: center;
+      width: 90%;
+      height: 200%;
+  } */
+
+    .welcome-text h2{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 25px;      
+  }
+
+  .welcome-text h5{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 15px; 
+  }
+
+  .link{
+      margin-top: 1em;
+      grid-gap: 80px;
+      grid-template-areas: 
+      "ios"
+      "android";
+      padding-left: 9em;
+  }
+
+  /* .swap-image{
+      width: 10px;
+      height: 10px;
+      justify-content: center;
+  } */
+
+}
+
+@media (max-width:450px){
+    .link{
+        margin-left: 3.5em;
+    }
+    .welcome-text{
+        margin-top: 2em;
+    }
+    .welcome-text h2{
+        margin: 0 auto;
+        width: 40%;
+    }
+
+    .welcome-text h5{
+        margin: 0 auto;
+        width: 30%;
+        font-size: smaller;
+    }
+
+    .ios{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        position: absolute;
+        background: black;
+        opacity: 80%;
+        width: 25vh;
+        height: 8vh;
+        border-radius: 40px;
+        grid-area: ios-link;
+    }
+
+    .ios > p{
+        padding-top: .5em;
+        font-size: small;
+    }
+
+    .apple{
+        padding-left: .1em; 
+        margin-top: .3em;
+        width: 60px;
+        height: 60px;
+    }
+
+    .android{
+        display: grid;
+        grid-template-columns: 35% 65%;
+        position: absolute;
+        background: black;
+        opacity: 80%;
+        width: 25vh;
+        height: 8vh;
+        border-radius: 40px;
+        grid-area: ios-link;
+    }
+
+    .android >p{
+        padding-top: .5em;
+        font-size: small;
+    }
+
+    .google{
+        padding-left: 1em; 
+        margin-top: .5em;
+        width: 50px;
+        height: 50px;
+    } 
+
+
+    /* .image{
+        margin-top: 5em;
+        justify-self: center;
+        width: 90%;
+        height: 150%;
+    } */
+
+}
