@@ -1,20 +1,23 @@
-import React, { Component } from 'react'
-import { Form, Row, Col, Button } from 'react-bootstrap'
+import React, { Component } from 'react';
+import { Form, Button } from 'react-bootstrap'
+import Location from '../assets/Location.svg'
+import Mail from '../assets/Mail.svg'
+import ContactUs from '../assets/ContactUs.svg'
 import './Contact.css'
 export class Contact extends Component {
     render() {
         return (
                 <div className='contact-container'>
                     <div className="contact-ii">
-                        <img className="contact-pic" style={{width:'500px', height:'500px'}} src="../assets/contact.svg" alt="contact"/>
+                        <img className="contact-pic" style={{width:'500px', height:'500px'}} src={ContactUs} alt="contact"/>
                         <div className="contact-section">
                             <p id="cu">Contact Us</p>
                             <div className="location">
-                                <img src="../assets/location.svg" style={{width:'25px', height:'25px'}}/>
+                                <img src={Location} style={{width:'25px', height:'25px'}}/>
                                 <p style={{color:'white', color:'white'}}>No. 3a Ransom Kuti Way, Lekki, Lagos</p>
                             </div>
                             <div className="mail">
-                                <img src="../assets/mail.svg" style={{width:'25px', height:'25px'}}/>
+                                <img src={Mail} style={{width:'25px', height:'25px'}}/>
                                 <p style={{color:'white', color:'white'}}>hello@swap.com</p>
                             </div>
                         </div>
