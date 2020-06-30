@@ -14,8 +14,8 @@ export class Footer extends Component {
                         <p>For investments, sponsorships and adverts placements,<br></br> contact us at <span style={{color:'#FF9D5C'}}> sammyoyekeye@gmail.com</span></p>
                     </div>
                     <div className="links">
-                        <Nav.Link href="/Privacy" style={{color:'white'}}>Privacy</Nav.Link>
-                        <Nav.Link href="/Terns" style={{color:'white'}}>Terms and Conditions</Nav.Link>
+                        <Nav.Link href="/Privacy" style={{color:'white'}}>Privacy Policy</Nav.Link>
+                        <Nav.Link href="/Terms" style={{color:'white'}}>Terms and Conditions</Nav.Link>
                     </div>
                 </div>
                 
