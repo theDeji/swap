@@ -1,9 +1,26 @@
 .footer{
+    display: grid;
+    grid-template-rows: 1fr;
     font-family: 'Righteous';
-    background-color:rgb(65, 26, 0);
-    /* opacity: 80%; */
+    background-color:rgb(24, 12, 1);
     color: white;
-    text-align: center;
-    height: 9vh;
+    text-align: left;
     padding-top: 5px;
+}
+
+.other-info{
+    padding: 2em 5em;
+}
+
+.swap{
+    text-align: center;
+}
+.info{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.links{
+    text-decoration: none;
+    padding: 5em 10em;
 }

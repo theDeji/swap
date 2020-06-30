@@ -1,28 +1,20 @@
 .pages{
-    display: grid;
-    grid-template-areas: 
-    "contactpage"
-    "privacy";
-    font-family: 'Righteous';
-    align-self: center;
-}
-
-.pages a {
     background-color: #FF9D5C;
-    display: block;
-    padding: 0.8em 5em;
-    text-align: center;
-    font-size: .9rem;
+    font-family: 'Righteous';
+    padding: .5em 1em;
 }
 
-.pages a:hover{
-    background-color: rgb(65, 26, 0);
-    opacity: 90%;
+#basic-navbar-nav{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
 }
 
-.privacy{
-    grid-area: privacy;
+.navbar-default{
+    background-image: none;
+    border: none;
+    border-radius: 0;
 }
+
 @media(max-width: 700px){
     .pages{
         grid-template-areas:
@@ -31,6 +23,13 @@
 }
 
 @media(max-width: 500px){
+    .pages a {
+        background-color: #FF9D5C;
+        display: block;
+        padding: 0.8em 5em;
+        text-align: center;
+        font-size: .9rem;
+    }
     .pages{
         grid-template-areas: 
         "contactpage";

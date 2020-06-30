@@ -9,11 +9,10 @@ export class Home extends Component {
         return (
             <div className="home-container">
                 {/* Swap logo, not grid */}
-                <a href="/" style={{color:"black", textDecoration:"none"}}>
-                    <div className="swap-logo">
-                        swap
-                    </div>
-                </a>
+                
+                <div className="swap-logo">
+                    swap
+                </div>
 
                 {/* grid for welcome and swap image */}
                 <div className="welcome-swap">
