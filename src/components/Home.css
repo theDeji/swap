@@ -1,7 +1,7 @@
 .home-container{
     font-family: 'Righteous';
     background-color:#FF9D5C ;
-    height: 90vh;
+    height: 90%;
 }
 
 .swap-logo{
@@ -30,13 +30,11 @@
     grid-area: welcome-text-h5;
 }
 
-
 .swap-image{
     display: grid;
     justify-content: right;
-
+    /* margin-bottom: 4em; */
 }
-
 
 .link{
     margin-top: 1em;
@@ -48,13 +46,6 @@
     "ios android";
     justify-content: left;
 }
-
-
-/* .download-links{
-    margin-top: 5em;
-    display: grid;
-    grid-template-columns: 50% 50%;
-} */
 
 
 .ios{
@@ -191,61 +182,515 @@
     /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
   }
 
+  .info{
+    font-family: 'Righteous';
+    display: grid;
+    grid-template-areas: 
+    "other-info pt-links";
+}
 
-  @media (max-width: 800px){
+.other-info{
+    padding: 2em 5em;
+    grid-area: other-info;
+}
+
+.pt-links{
+    text-decoration: none;
+    grid-area: pt-links;
+    /* padding-right: 4em; */
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.career{
+    grid-area: career;
+}
+
+#discuss{
+    grid-area: discuss;
+}
+
+.investors{
+    grid-area: investors;
+}
+
+#invest{
+    grid-area:invest;
+}
+
+.privacy{
+    grid-area: privacy;
+}
+
+.terms{
+    grid-area: terms;
+}
+
+/* .other-info{
+    grid-template-areas:
+    "career"
+    "discuss"
+    "investors"
+    "invest";
+}
+
+.info{
+    font-family: 'Righteous';
+    grid-template-areas: 
+    "other-info pt-links";
+    display: inline-block;
+}
+
+.pt-links{
+    text-decoration: none;
+    grid-template-areas: 
+    "privacy"
+    "terms";
+    text-align: center;
+} */
+
+  @media (max-width: 1200px){
     .swap-logo{
-        text-align: center;
-        padding-right: .8em;
+        text-align: left;
+        padding-top: .5em;
     }
 
     .welcome-swap {
-        margin-top: -3em;
+        margin-top: -8em;
         justify-content: center;
-        grid-template-columns: 1fr;
+        grid-template-columns: 50% 60%;
     }
     
-
     .swap-image{
-      margin-top: 5em;
-      justify-self: center;
-  }
+      margin-top: 1em;
+      justify-self: left;
+    }
+
+    .welcome-text{
+        padding-right: 6em;   
+    }
 
     .welcome-text h2{
+      /* padding-top: 4em; */
       display: flex;
       flex-direction: column;
       text-align: center;
-      font-size: 25px;      
-  }
+      font-size: 20px;  
+    }
 
-  .welcome-text h5{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      font-size: 15px; 
-  }
+    .welcome-text h5{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 13px; 
+    }
 
-  .link{
-      padding-left: 5em;
-      grid-template-areas: 
-      "ios android";
-  }
+    .link{
+        /* padding-right: 2px ; */
+        grid-template-areas: 
+        "ios android";
+    }
+
+    .other-info{
+        grid-template-areas:
+        "career"
+        "discuss"
+        "investors"
+        "invest";
+    }
+
+    .info{
+        font-family: 'Righteous';
+        display: grid;
+        grid-template-areas: 
+        "other-info pt-links";
+    }
+
+    .pt-links{
+        text-decoration: none;
+        padding-top: 6em;
+        font-size: small;
+        /* grid-template-areas: 
+        "privacy terms";
+        text-align: center; */
+    }
 
 }
 
 
-  @media (max-width: 600px){
-      .swap-logo{
-          text-align: center;
-          padding-right: 1em;
-      }
+@media (max-width: 975px){
+    .home-container{
+        height: 130vh;
+    }
+    
+    .swap-logo{
+        text-align: center;
+        padding-top: .5em;
+    }
 
-      .welcome-swap {
-          justify-content: center;
-          grid-template-columns: 1fr;
+    .welcome-swap {
+        /* padding-top: 2em; */
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+
+    .swap-image{
+        justify-self: center;
+    }
+
+    .welcome-text{
+        padding-left: 6em; 
+    }
+
+    .welcome-text h2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;     
+      }
+  
+      .welcome-text h5{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          font-size: 15px; 
+      }
+  
+      .link{
+          margin-top: 1.5em;
+          grid-gap: 80px;
+          grid-template-areas: 
+          "ios"
+          "android";
+          padding-left: 11.5em;
+      }
+  
+      .other-info{
+          grid-template-areas:
+           "career"
+           "discuss"
+           "investors"
+           "invest";
       }
       
+      .info{
+          padding-right: 3em;
+          font-family: 'Righteous';
+          grid-template-areas: 
+          "other-info pt-links";
+      }
+      
+      .pt-links{
+          text-decoration: none;
+          grid-template-areas: 
+          "privacy"
+          "terms";
+          text-align: left;
+      }
+    
+}
 
-      .swap-image{
+@media (max-width: 880px){
+    .home-container{
+        height: 130vh;
+    }
+    
+    .swap-logo{
+        text-align: center;
+        padding-top: .5em;
+    }
+
+    .welcome-swap {
+        padding-top: 2em;
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+
+    .swap-image{
+        justify-self: center;
+    }
+
+    .welcome-text{
+        padding-left: 6em; 
+    }
+
+    .welcome-text h2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;     
+      }
+  
+      .welcome-text h5{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          font-size: 15px; 
+      }
+  
+      .link{
+          margin-top: 1.5em;
+          grid-gap: 80px;
+          grid-template-areas: 
+          "ios"
+          "android";
+          padding-left: 11.5em;
+      }
+  
+      .other-info{
+          grid-template-areas:
+           "career"
+           "discuss"
+           "investors"
+           "invest";
+      }
+      
+      .info{
+          padding-right: 3em;
+          font-family: 'Righteous';
+          grid-template-areas: 
+          "other-info pt-links";
+      }
+      
+      .pt-links{
+          text-decoration: none;
+          grid-template-areas: 
+          "privacy"
+          "terms";
+          text-align: left;
+      }
+    
+}
+
+@media (max-width: 800px){
+    .home-container{
+        height: 130vh;
+    }
+    
+    .swap-logo{
+        text-align: center;
+        padding-top: .5em;
+    }
+
+    .welcome-swap {
+        /* padding-top: 2em; */
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+
+    .swap-image{
+        justify-self: center;
+    }
+
+    .welcome-text{
+        padding-left: 6em; 
+    }
+
+    .welcome-text h2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;     
+      }
+  
+      .welcome-text h5{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          font-size: 15px; 
+      }
+  
+      .link{
+          margin-top: 1.5em;
+          grid-gap: 80px;
+          grid-template-areas: 
+          "ios"
+          "android";
+          padding-left: 9.5em;
+      }
+  
+      .other-info{
+          grid-template-areas:
+           "career"
+           "discuss"
+           "investors"
+           "invest";
+      }
+      
+      .info{
+          padding-right: 3em;
+          font-family: 'Righteous';
+          grid-template-areas: 
+          "other-info pt-links";
+      }
+      
+      .pt-links{
+          text-decoration: none;
+          grid-template-areas: 
+          "privacy"
+          "terms";
+          text-align: left;
+      }
+    
+}
+
+@media (max-width: 700px){
+    .home-container{
+        height: 130vh;
+    }
+    
+    .swap-logo{
+        text-align: center;
+        padding-top: .5em;
+    }
+
+    .welcome-swap {
+        /* padding-top: 2em; */
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+
+    .swap-image{
+        justify-self: center;
+    }
+
+    .welcome-text{
+        padding-left: 6em; 
+    }
+
+    .welcome-text h2{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;     
+      }
+  
+      .welcome-text h5{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          font-size: 15px; 
+      }
+  
+      .link{
+          margin-top: 1.5em;
+          grid-gap: 80px;
+          grid-template-areas: 
+          "ios"
+          "android";
+          padding-left: 6em;
+      }
+  
+      .other-info{
+          grid-template-areas:
+           "career"
+           "discuss"
+           "investors"
+           "invest";
+      }
+      
+      .info{
+          padding-right: 3em;
+          font-family: 'Righteous';
+          grid-template-areas: 
+          "other-info pt-links";
+      }
+      
+      .pt-links{
+          text-decoration: none;
+          grid-template-areas: 
+          "privacy"
+          "terms";
+          text-align: left;
+      }
+    
+}
+
+@media (max-width: 670px){
+.home-container{
+    height: 142vh;
+}
+    
+.swap-logo{
+    text-align: center;
+    /* padding-right: 1em; */
+}
+
+.welcome-swap {
+    justify-content: center;
+    grid-template-columns: 1fr;
+}
+    
+.swap-image{
+    /* margin-top: 3em; */
+    justify-self: center;
+}
+
+.welcome-text h2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;      
+}
+
+.welcome-text h5{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px; 
+}
+
+.link{
+    margin-top: 1.5em;
+    grid-gap: 80px;
+    grid-template-areas: 
+    "ios"
+    "android";
+    padding-left: 4em;
+}
+
+.other-info{
+    grid-template-areas:
+        "career"
+        "discuss"
+        "investors"
+        "invest";
+}
+
+.info{
+    padding-right: 3em;
+    font-size: small;
+    font-family: 'Righteous';
+    grid-template-areas: 
+    "other-info pt-links";
+}
+
+.pt-links{
+    text-decoration: none;
+    grid-template-areas: 
+    "privacy"
+    "terms";
+    text-align: left;
+}
+
+}
+
+@media (max-width: 600px){
+    .home-container{
+        height: 132vh;
+    }
+      
+    .swap-logo{
+        text-align: center;
+        /* padding-right: 1em; */
+    }
+
+    .welcome-swap {
+        justify-content: center;
+        grid-template-columns: 1fr;
+    }
+      
+    .swap-image{
         margin-top: 5em;
         justify-self: center;
     }
@@ -254,31 +699,57 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        font-size: 25px;      
+        font-size: 22px;      
     }
 
     .welcome-text h5{
         display: flex;
         flex-direction: column;
         text-align: center;
-        font-size: 15px; 
+        font-size: 13px; 
     }
 
     .link{
-        padding-left: 1em;
+        margin-top: 1.5em;
+        grid-gap: 80px;
         grid-template-areas: 
-        "ios android";
+        "ios"
+        "android";
+        padding-left: 3em;
     }
 
-
+    .other-info{
+        grid-template-areas:
+         "career"
+         "discuss"
+         "investors"
+         "invest";
+    }
+    
+    .info{
+        padding-right: 3em;
+        font-family: 'Righteous';
+        grid-template-areas: 
+        "other-info pt-links";
+    }
+    
+    .pt-links{
+        text-decoration: none;
+        grid-template-areas: 
+        "privacy"
+        "terms";
+        text-align: left;
+    }
+  
   }
 
-
   @media (max-width: 500px){
+    .home-container{
+        height: 127vh;
+    }
     .swap-logo{
         text-align: center;
-        padding-right: 1em;
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .welcome-swap {
@@ -286,46 +757,61 @@
         grid-template-columns: 1fr;
     }
     
-
-    /* .image{
-      margin-top: 5em;
-      justify-self: center;
-      width: 90%;
-      height: 200%;
-  } */
-
     .welcome-text h2{
       display: flex;
       flex-direction: column;
       text-align: center;
-      font-size: 25px;      
-  }
+      font-size: 22px;      
+    }
 
-  .welcome-text h5{
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      font-size: 15px; 
-  }
+    .welcome-text h5{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 13px; 
+    }
 
-  .link{
-      margin-top: 1em;
-      grid-gap: 80px;
-      grid-template-areas: 
-      "ios"
-      "android";
-      padding-left: 9em;
-  }
+    .link{
+        margin-top: 2em;
+        grid-gap: 80px;
+        grid-template-areas: 
+        "ios"
+        "android";
+        padding-right: 2em;
+    }
 
-  /* .swap-image{
-      width: 10px;
-      height: 10px;
-      justify-content: center;
-  } */
+    .other-info{
+        grid-template-areas:
+         "career"
+         "discuss"
+         "investors"
+         "invest";
+    }
+    
+    .info{
+        font-family: 'Righteous';
+        grid-template-areas: 
+        "other-info"
+        "pt-links";
+        font-size: small;
+    }
+    
+    .pt-links{
+        text-decoration: none;
+        grid-template-areas: 
+        "privacy"
+        "terms";
+        text-align: center;
+    }
 
 }
 
 @media (max-width:450px){
+
+    .home-container{
+        height: 135vh;
+    }
+
     .link{
         margin-left: 3.5em;
     }
@@ -349,7 +835,7 @@
         position: absolute;
         background: black;
         opacity: 80%;
-        width: 25vh;
+        width: 30vh;
         height: 8vh;
         border-radius: 40px;
         grid-area: ios-link;
@@ -373,7 +859,7 @@
         position: absolute;
         background: black;
         opacity: 80%;
-        width: 25vh;
+        width: 30vh;
         height: 8vh;
         border-radius: 40px;
         grid-area: ios-link;

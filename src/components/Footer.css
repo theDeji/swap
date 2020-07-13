@@ -2,25 +2,11 @@
     display: grid;
     grid-template-rows: 1fr;
     font-family: 'Righteous';
-    background-color:rgb(24, 12, 1);
+    background-color:rgb(22, 21, 20);
     color: white;
     text-align: left;
-    padding-top: 5px;
+    padding-top: 10px;
 }
-
-.other-info{
-    padding: 2em 5em;
-}
-
 .swap{
     text-align: center;
-}
-.info{
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
-
-.links{
-    text-decoration: none;
-    padding: 5em 10em;
 }

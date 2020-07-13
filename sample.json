@@ -1,0 +1,81 @@
+{
+    "pagination": {},
+    "count": 15,
+    "teams": [
+        {
+            "name": "new team",
+            "manager": "pochettino",
+            "_id": "5ef3e49d7ac11a002441b976"
+        },
+        {
+            "name": "PSG",
+            "manager": "tuchel",
+            "_id": "5ef1ec62b541fb00245a9a20"
+        },
+        {
+            "name": "leipzig",
+            "manager": "ole gunnar",
+            "_id": "5ef1ec48b541fb00245a9a1f"
+        },
+        {
+            "name": "Hi Fc",
+            "manager": "heist",
+            "_id": "5ef13ac2e571d400244f1575"
+        },
+        {
+            "name": "Eko fc",
+            "manager": "Boss",
+            "_id": "5ef13aabe571d400244f1574"
+        },
+        {
+            "name": "salsburg",
+            "manager": "Raji Victor",
+            "_id": "5ef139f6e571d400244f1571"
+        },
+        {
+            "name": "tottenham",
+            "manager": "pochettino",
+            "_id": "5ef139dce571d400244f1570"
+        },
+        {
+            "name": "Barcelona",
+            "manager": "Setien",
+            "_id": "5ef139b0e571d400244f156f"
+        },
+        {
+            "name": "burnley",
+            "manager": "okey bakassi",
+            "_id": "5ef0f39a9a8b3b3e409204fb"
+        },
+        {
+            "name": "Liverpool Fc",
+            "manager": "Raji Victor",
+            "_id": "5ef09f2bb09ad5132668ec55"
+        },
+        {
+            "name": "Liverpool team b",
+            "manager": "Raji Victor",
+            "_id": "5ef082fcb09ad5132668ec51"
+        },
+        {
+            "name": "Arsenal",
+            "manager": "Ben Alamu",
+            "_id": "5ef0301ec7cd4f141959ca8c"
+        },
+        {
+            "name": "team fc",
+            "manager": "",
+            "_id": "5eef6c9b1ed0f44ef4d40b37"
+        },
+        {
+            "name": "lankey fc",
+            "manager": "jurgen kloppa",
+            "_id": "5eef53daa61bf148fe3fb48a"
+        },
+        {
+            "name": "bolton",
+            "manager": "dier richie",
+            "_id": "5eee988752bcf92d2e463345"
+        }
+    ]
+}

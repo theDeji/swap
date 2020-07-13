@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import './Nav.css'
 import { Navbar, Nav, NavItem, Form, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { ScrollLink } from 'react-scroll'
+import axios from 'axios'
+
+
 export class Navigation extends Component {
     render() {
         return (
@@ -12,9 +16,9 @@ export class Navigation extends Component {
                             <div className="home">
                                 <Nav.Link href="/">Home</Nav.Link>
                             </div>
-                            <div className="contact">
-                                <Nav.Link href="#Contact">Contact Us</Nav.Link>
-                            </div>
+                            {/* <div className="contact">
+                                <Nav.Link href="/Contact">Contact Us</Nav.Link>
+                            </div> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
