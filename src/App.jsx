@@ -13,7 +13,7 @@ function App() {
     <div>
       <Router>
         <div>
-        <Navigation/>
+          <Navigation/>
           <Route exact path='/' component={ Home }/>
           <Route  path='/Privacy' component= { Privacy }/> 
           <Route  path='/Terms' component= { Terms }/> 
